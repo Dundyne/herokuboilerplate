@@ -1,0 +1,71 @@
+{
+  "name": "herokuboilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node build/index.js",
+    "postinstall": "tsc && cd react-app/ && npm install && npm install --only=dev && npm run build",
+    "dev-client": "cd react-app && npm start",
+    "dev-server": "nodemon server/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dundyne/herokuboilerplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dundyne/herokuboilerplate/issues"
+  },
+  "homepage": "https://github.com/Dundyne/herokuboilerplate",
+  "dependencies": {
+    "@types/body-parser": "^1.19.1",
+    "@types/compression": "^1.7.1",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/express-session": "^1.17.4",
+    "@types/mocha": "^8.2.3",
+    "@types/multer": "^1.4.7",
+    "@types/nodemailer": "^6.4.4",
+    "@types/passport": "^1.0.7",
+    "await-to-js": "^3.0.0",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "date-fns": "^2.23.0",
+    "dotenv": "^8.6.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.1",
+    "gridfs-stream": "^1.1.1",
+    "helmet": "^4.6.0",
+    "heroku-ssl-redirect": "^0.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "jspdf": "^2.3.1",
+    "jwt-decode": "^3.1.2",
+    "mocha": "^8.4.0",
+    "moment": "^2.29.1",
+    "mongoose": "^5.13.5",
+    "multer": "^1.4.2",
+    "multer-gridfs-storage": "^5.0.0",
+    "nodemailer": "^6.6.3",
+    "passport": "^0.4.1",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth": "^2.0.0",
+    "passport-jwt": "^4.0.0",
+    "path": "^0.12.7",
+    "react-datepicker": "^3.8.0",
+    "rimraf": "^3.0.2",
+    "swagger-ui-express": "^4.1.6",
+    "typescript": "^4.3.5"
+  },
+  "engines": {
+    "node": ">=0.10.3 <15"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12",
+    "ts-node": "^9.1.1"
+  }
+}
